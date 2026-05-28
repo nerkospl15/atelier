@@ -14,14 +14,18 @@
 body{
 
     margin:0;
-    padding:40px;
+    padding:20px;
 
     background:#111;
     color:white;
 
     font-family:Arial, sans-serif;
 
-    overflow-x:hidden;
+    overflow:hidden;
+
+    height:100vh;
+
+    box-sizing:border-box;
 }
 
 /* HORLOGE */
@@ -30,10 +34,11 @@ body{
 
     position:absolute;
 
-    top:20px;
-    right:40px;
+    top:15px;
+    right:25px;
 
-    font-size:40px;
+    font-size:24px;
+
     font-weight:bold;
 
     color:#00ff99;
@@ -43,11 +48,13 @@ body{
 
 h1{
 
-    font-size:70px;
+    font-size:42px;
 
     color:#00ff99;
 
-    margin-bottom:40px;
+    margin-bottom:20px;
+
+    margin-top:0;
 }
 
 /* BLOCS */
@@ -56,27 +63,29 @@ h1{
 
     background:#222;
 
-    padding:25px;
+    padding:18px;
 
-    margin-bottom:25px;
+    margin-bottom:18px;
 
-    border-radius:20px;
+    border-radius:16px;
 
-    box-shadow:0 0 10px rgba(0,0,0,0.5);
+    box-shadow:0 0 10px rgba(0,0,0,0.4);
 }
 
 .section h2{
 
-    font-size:40px;
+    font-size:28px;
 
-    margin-bottom:20px;
+    margin-top:0;
+
+    margin-bottom:12px;
 }
 
 .section p{
 
-    font-size:32px;
+    font-size:22px;
 
-    margin:10px 0;
+    margin:8px 0;
 }
 
 /* BLOC IMPORTANT */
@@ -85,7 +94,7 @@ h1{
 
     background:#5c1d1d;
 
-    border-left:8px solid #ff4444;
+    border-left:6px solid #ff4444;
 }
 
 /* BLOC NOTES */
@@ -94,17 +103,17 @@ h1{
 
     background:white;
 
-    height:220px;
+    height:120px;
 
-    border-radius:20px;
-
-    margin-bottom:100px;
+    border-radius:16px;
 
     position:relative;
 
-    box-shadow:0 0 10px rgba(0,0,0,0.5);
-
     overflow:hidden;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.4);
+
+    margin-bottom:70px;
 }
 
 .notes-text{
@@ -116,13 +125,13 @@ h1{
 
     transform:translate(-50%,-50%);
 
-    font-size:80px;
+    font-size:48px;
 
     font-weight:bold;
 
     color:rgba(0,0,0,0.12);
 
-    letter-spacing:10px;
+    letter-spacing:8px;
 
     pointer-events:none;
 }
@@ -142,9 +151,9 @@ h1{
 
     overflow:hidden;
 
-    padding:18px 0;
+    padding:10px 0;
 
-    border-top:4px solid #00ff99;
+    border-top:3px solid #00ff99;
 
     z-index:999;
 }
@@ -157,13 +166,13 @@ h1{
 
     padding-left:100%;
 
-    font-size:38px;
+    font-size:24px;
 
     font-weight:bold;
 
     color:white;
 
-    animation:defilement 25s linear infinite;
+    animation:defilement 20s linear infinite;
 }
 
 @keyframes defilement{
@@ -198,9 +207,7 @@ h1{
 
     <h2>📋 Productions du jour</h2>
 
-    <p>DOSSIERS TECHNIQUE DU FEU → pour vendredi après-midi</p>
-
-    <p>DOSSIERS en Steelbond → pour vendredi après-midi</p>
+    <p>DOSSIERS Steelbond → vendredi après-midi</p>
 
 </div>
 
@@ -219,7 +226,9 @@ h1{
 <div class="notes">
 
     <div class="notes-text">
+
         NOTES
+
     </div>
 
 </div>
@@ -229,7 +238,9 @@ h1{
 <div class="ticker">
 
     <span>
+
         ⚠️ Pensez à facturer les dossiers cette semaine : dossier terminé = facture dans banette ⚠️
+
     </span>
 
 </div>
