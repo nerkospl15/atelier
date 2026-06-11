@@ -77,6 +77,27 @@ h1{
     font-weight:700;
 }
 
+/* LAYOUT */
+
+.container{
+
+    display:flex;
+
+    gap:20px;
+
+    height:calc(100vh - 210px);
+}
+
+.left{
+
+    width:50%;
+}
+
+.right{
+
+    width:50%;
+}
+
 /* BLOCS */
 
 .section{
@@ -119,24 +140,19 @@ h1{
     border-left:6px solid #ff4444;
 }
 
-/* NOTES FIXE EN BAS */
+/* NOTES */
 
 .notes{
 
-    position:fixed;
-
-    left:20px;
-    right:20px;
-
-    bottom:70px;
-
-    height:220px;
+    height:100%;
 
     background:white;
 
     border-radius:18px;
 
     box-shadow:0 0 20px rgba(0,0,0,0.4);
+
+    position:relative;
 
     overflow:hidden;
 }
@@ -150,7 +166,7 @@ h1{
 
     transform:translate(-50%,-50%);
 
-    font-size:90px;
+    font-size:120px;
 
     font-weight:700;
 
@@ -220,30 +236,41 @@ h1{
 
 <h1>🖨️ ATELIER IMPRESSION</h1>
 
-<div class="section">
+<div class="container">
 
-    <h2>📋 Productions du jour</h2>
+    <div class="left">
 
-    <p></p>
-    <p>CO2606-9606 -> 4 AKILUX AVEC DECOUPE FORME POUR JEUDI APRES MIDI</p>
-    <p>CO2605-9521 -> BANDEROLES POUR LHERITIER *4 POUR VENDREDI 12</p>
-    <p></p>
+        <div class="section">
 
-</div>
+            <h2>📋 Productions du jour</h2>
 
-<div class="section important">
+            <p></p>
 
-    <h2>🚨 Informations importantes</h2>
+            <p></p>
 
-    <p></p>
+        </div>
 
-</div>
+        <div class="section important">
 
-<div class="notes">
+            <h2>🚨 Informations importantes</h2>
 
-    <div class="notes-text">
+            <p></p>
 
-        NOTES
+        </div>
+
+    </div>
+
+    <div class="right">
+
+        <div class="notes">
+
+            <div class="notes-text">
+
+                NOTES
+
+            </div>
+
+        </div>
 
     </div>
 
@@ -253,8 +280,8 @@ h1{
 
     <span>
 
-    ✨✨ ON FAIT TOUT BRILLER AVANT 18H JEUDI ✨✨
         
+
     </span>
 
 </div>
